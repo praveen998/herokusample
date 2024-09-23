@@ -8,11 +8,12 @@ app = Flask(__name__)
 # Define the route for the root URL (/)
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return '<p>Hello, World!</p>'
+
 
 @app.route('/name')
 def getname():
-    return 'Hello, Praveen!'
+    return '<p>Hello, Praveen!</p>'
 
 
 
