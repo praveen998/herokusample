@@ -11,7 +11,7 @@ def hello_world():
     return 'Hello, World!'
 
 @app.route('/name')
-def hello_world():
+def getname():
     return 'Hello, Praveen!'
 
 
@@ -26,7 +26,6 @@ def gettexttospeech():
     google_text_sound(text)
     time.sleep(0.1)
     return send_file('testtospeech.wav', mimetype='audio/wav'),200
-
 
 
 # Run the Flask app
